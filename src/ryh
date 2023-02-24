@@ -1,0 +1,20 @@
+<ul className="list-group list-group-flush">
+                {
+                    props.con.map((element)=>{
+                        return ( 
+                            <div>                
+                                <li key={element.id} class="list-group-item" style={{textDecoration:'none'}}>
+                                    <div  class="input-group mb-3 grid text-center">
+                                        <div class="input-group mb-3 g-col-2">{element.todo}</div>
+                                        <div class="input-group-append g-col-2">
+                                            <button class="btn btn-outline-secondary" type="button">Delete</button>
+                                        </div>
+                                    </div>
+                                    
+                                </li>
+                                {/* <button class="btn btn-outline-secondary" type="button">submit</button> */}
+                            </div>   
+                        )
+                    })
+                }
+                </ul>
